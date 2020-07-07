@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc index.ts && node index.js",
-    "build": "tsc index.ts"
+    "start": "tsc && node basic-types/index.js",
+    "watch": "tsc -w",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",

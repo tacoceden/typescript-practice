@@ -1,0 +1,23 @@
+{
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts && node index.js",
+    "build": "tsc index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tacoceden/typescript-practice.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Eden Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tacoceden/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/tacoceden/typescript-practice#readme"
+}

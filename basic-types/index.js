@@ -1,22 +1,24 @@
-var f = false;
-var t = true;
-var decimal = 6;
-var hex = 0xf00d;
-var binary = 10;
-var octal = 484;
-var nan = NaN;
-var color = 'blue';
+let f = false;
+let t = true;
+let decimal = 6;
+let hex = 0xf00d;
+let binary = 0b1010;
+let octal = 0o744;
+let nan = NaN;
+let color = 'blue';
 color = 'red';
-var fullName = "Eden";
-var age = 18;
-var sentence = "Hello, my name is " + fullName + ".\n\nI'll be " + (age + 1) + " years old next month.";
+let fullName = `Eden`;
+let age = 18;
+let sentence = `Hello, my name is ${fullName}.
+
+I'll be ${age + 1} years old next month.`;
 console.log('sentence: ', sentence);
-var primitiveArray = [1, 2, 3];
-var genericArray = [1, 2, 3];
-var x;
+let primitiveArray = [1, 2, 3];
+let genericArray = [1, 2, 3];
+let x;
 x = ["hello", 10];
-console.log(" x[0] is string: " + (typeof x[0] === 'string'));
-console.log(" x[1] is number: " + (typeof x[1] === 'number'));
+console.log(` x[0] is string: ${typeof x[0] === 'string'}`);
+console.log(` x[1] is number: ${typeof x[1] === 'number'}`);
 var Color;
 (function (Color) {
     Color[Color["Red"] = 0] = "Red";
@@ -24,7 +26,7 @@ var Color;
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
 ;
-var green = Color.Green;
+let green = Color.Green;
 console.log('green: ', green);
 var Color2;
 (function (Color2) {
@@ -33,23 +35,23 @@ var Color2;
     Color2[Color2["Blue"] = 4] = "Blue";
 })(Color2 || (Color2 = {}));
 ;
-var blue = Color.Blue;
+let blue = Color.Blue;
 console.log('blue: ', blue);
-var greenColorName = Color2[2];
+let greenColorName = Color2[2];
 console.log('greenColorName: ', greenColorName);
-var notSure = 4;
+let notSure = 4;
 notSure = "maybe a string instead";
 notSure = false;
 notSure.ifItExists();
 notSure.toFixed();
-var prettySure = 4;
+let prettySure = 4;
 function warnUser() {
     console.log("This is my warning message");
 }
-var unusable = undefined;
+let unusable = undefined;
 unusable = null;
-var u = undefined;
-var n = null;
+let u = undefined;
+let n = null;
 function error(message) {
     throw new Error(message);
 }
@@ -62,6 +64,6 @@ function infiniteLoop() {
 }
 create({ prop: 0 });
 create(null);
-var someValue = "this is a string";
-var strLength = someValue.length;
-var strLength2 = someValue.length;
+let someValue = "this is a string";
+let strLength = someValue.length;
+let strLength2 = someValue.length;
